@@ -11,7 +11,8 @@ else:
     greatest =num 1
   while True:
     if greatest%num1==0 and greatest%num2==0:
-      hcf=greatest
+      LCM=greatest
       break
     else:
       greatest+=1
+   print(f"The LCM of {num1} and {num2} is {LCM}")
