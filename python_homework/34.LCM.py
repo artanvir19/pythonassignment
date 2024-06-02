@@ -8,11 +8,11 @@ else:
   if num1<num2:
     greatest = num2
   else:
-    greatest =num 1
+    greatest =num1
   while True:
     if greatest%num1==0 and greatest%num2==0:
       LCM=greatest
       break
     else:
       greatest+=1
-   print(f"The LCM of {num1} and {num2} is {LCM}")
+  print(f"The LCM of {num1} and {num2} is {LCM}")
