@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Stock Prediction</title>
+</head>
+<body>
+    <h1>Tesla Stock Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="Open">Open Price: </label>
+        <input type="text" id="Open" name="Open" required><br>
+
+        <label for="High">High Price: </label>
+        <input type="text" id="High" name="High" required><br>
+
+        <label for="Low">Low Price: </label>
+        <input type="text" id="Low" name="Low" required><br>
+
+        <label for="Close">Close Price: </label>
+        <input type="text" id="Close" name="Close" required><br>
+
+        <label for="Volume">Volume: </label>
+        <input type="text" id="Volume" name="Volume" required><br>
+
+        <label for="Day">Day: </label>
+        <input type="text" id="Day" name="Day" required><br>
+
+        <label for="Month">Month: </label>
+        <input type="text" id="Month" name="Month" required><br>
+
+        <label for="Year">Year: </label>
+        <input type="text" id="Year" name="Year" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_result %}
+        <h2>Prediction Result: {{ prediction_result }}</h2>
+    {% endif %}
+</body>
+</html>
